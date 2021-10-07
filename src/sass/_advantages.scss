@@ -1,0 +1,39 @@
+.container {
+  width: 320px;
+  background-color: #fff5f6;
+  outline: 1px solid red;
+}
+
+.list {
+  list-style: none;
+}
+
+.advantages-list {
+  padding-left: 20px;
+  @media screen and (min-width: 480px) {
+    padding-left: 36px;
+  }
+}
+.advantages-list__item:not(:last-child) {
+  margin-bottom: 38px;
+}
+.advantages-list__title {
+  font-family: 'Titan One', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #d41443;
+}
+
+.advantages-list__description {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #000000;
+}
