@@ -1,0 +1,351 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+.example {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #424242;
+  max-width: 960px;
+  padding: 16px;
+}
+
+.example code {
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #009688;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.example .background {
+  height: 240px;
+  background-image: url("../images/demo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 37px;
+  position: absolute;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.header__navigation-ul {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .header__navigation-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.header__navigation-ul-item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.button-header {
+  height: 44px;
+  padding-left: 37px;
+  padding-right: 37px;
+  color: #d41443;
+  background-color: white;
+  fill: #d41443;
+  border-radius: 22px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border: hidden;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-header:hover, .button-header:focus {
+  background-color: #ecebeb;
+}
+
+.button-header--alternative {
+  color: white;
+  background-color: #d41443;
+  border-radius: 22px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.87;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: 700;
+  letter-spacing: 00.06em;
+  border: hidden;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-header--alternative:hover, .button-header--alternative:focus {
+  background-color: #c7133e;
+}
+
+.button-header--sign {
+  margin-left: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .button-menu {
+    display: none;
+  }
+}
+
+.product {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  text-align: center;
+  color: #FFA5BA;
+}
+
+.product__tittle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+
+.product__list {
+  width: 280px;
+  height: 485px;
+  left: 20px;
+  top: 839px;
+  background: #FFB8CA;
+  border-radius: 24px;
+}
+
+.product__list-tittle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+
+.product__list-text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+
+.hero {
+  position: absolute;
+  height: 665px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #ffb8ca;
+  background-image: url(../images/iceCream-desktop1x.png), url(../images/milk-desktop1x.png), url(../images/soTasty-desktop1x.png), url(../images/ellipse-desktop1x.png);
+  background-repeat: no-repeat;
+  background-position: bottom right 450px, bottom 45px left 77px, bottom right 109px, bottom 75px right 267px;
+  background-size: auto;
+}
+
+.hero-main {
+  width: 277px;
+  padding: 171px 0 112px 69px;
+}
+
+.hero-secondary {
+  width: 200px;
+  padding: 0 0 102px 249px;
+}
+
+.hero-third {
+  padding: 160px 0 361px 431px;
+}
+
+.hero-left {
+  width: 50%;
+}
+
+.hero-right {
+  text-align: right;
+  width: 50%;
+}
+
+.hero-third-ul-item1 {
+  position: absolute;
+  background-color: transparent;
+  top: 4px;
+  right: 18px;
+  width: 54px;
+  height: 73px;
+}
+
+.link-button {
+  display: inline-block;
+  text-align: center;
+  padding: 15px 23px;
+  margin-left: 15px;
+  border-radius: 22px;
+  background-color: #fff;
+  color: #d41443;
+}
+
+.link-button--alternative {
+  display: inline-block;
+  text-align: center;
+  padding: 15px 23px;
+  border-radius: 22px;
+  background-color: #d41443;
+  color: white;
+}
+
+.link-button--arrow {
+  display: inline-block;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #fff;
+  fill: #d41443;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.title {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.title-correction {
+  font-size: 34px;
+  color: #d41443;
+}
+
+.hero-secondary--text {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 320px;
+  background-color: #fff5f6;
+  outline: 1px solid red;
+}
+
+.list {
+  list-style: none;
+}
+
+.advantages-list {
+  padding-left: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .advantages-list {
+    padding-left: 36px;
+  }
+}
+
+.advantages-list__item:not(:last-child) {
+  margin-bottom: 38px;
+}
+
+.advantages-list__title {
+  font-family: 'Titan One', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.advantages-list__description {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #000000;
+}
+
+.test__section-about {
+  background-color: aquamarine;
+  color: black;
+  font-size: 72px;
+}
+
+.footer {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-title {
+  font-style: italic, san-serif;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1.76;
+  letter-spacing: 0.05em;
+  color: green;
+}
+
+.footer-title-purple {
+  color: purple;
+}
+
+.footer img {
+  display: block;
+  border: 3px dotted darkslategrey;
+  max-width: 349px;
+  height: 177px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*# sourceMappingURL=main.css.map */
